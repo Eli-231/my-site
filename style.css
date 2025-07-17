@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif ;
+    font-size: 1vw;
+}
+
+h1 {
+    display: flex;
+    justify-self: center;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 7s ease infinite;
+    border-radius: 25px;
+    text-align: center;
+    width: max-content;
+    font-size: 3rem;
+    box-shadow:  4px 4px 10px gray;
+}
+
+h1::before, h1::after{
+    content: "🏐";
+}
+
+.hero {
+    width: auto;
+}
+
+.navbar {
+margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #20232a;
+  padding: 1rem 2rem;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #bd2323;
+  transition: color 0.3s ease;
+  position: relative;
+  left: 70vw;
+  font-size: 2vw;
+}
+
+.nav-links li a:hover {
+  color: #1f7790;
+}
+
+
+section {
+    position: relative;
+    top: 2rem;
+    display: flex;
+    justify-content: center;
+    width: 500px;
+    color: black;
+    font-size: 2rem;
+}
+
+#text1 {
+    color: linear-gradient(45deg, green, blue, red);
+    animation: gradient 3s ease infinite;
+}
+
+div {
+    position: relative;
+    top: 4rem;
+    width: 1200px;
+}
+
+span {
+    display: flex;
+    justify-self: center;
+    
+    border-radius: 20px;
+    padding: 5px;
+    background: linear-gradient(-45deg, #1ab462, #e5cd1a, #23a6d5, #23d5ab);
+    animation: gradient 3s ease infinite;
+    max-width: 2000px;
+}
+
+div figure img {
+    width: 30vw;
+    height: 30vw;
+    margin-left: 100px;
+}
+
+.img1 {
+    margin-left: 10%;
+}
+
+.img2 {
+    position: relative;
+    top: 50px;
+}
+
+div figure:nth-child(2) {
+    position: relative;
+    left: 80%;
+}
+
+.photos figure img {
+    display: grid;
+    border-radius: 50px;
+    column-gap: 20px;
+}
+
+footer div p {
+    color: rgb(155, 18, 155);
+    font-size: 50px;
+}
+
+.link {
+    margin-left: 100px;
+}
+
+.link p{
+    display: flex;
+    justify-content: space-evenly;
+    align-content: flex-end;
+    flex-direction: column;
+    font-size: 2rem;
+}
+
+.list {
+    
+    display: flex;
+    align-content: flex-end;
+    flex-direction: column;
+
+    font-size: 2rem;
+}
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
