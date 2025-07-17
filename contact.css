@@ -5,7 +5,8 @@
 }
 
 html {
-    background-color:bisque ;
+    background: linear-gradient(90deg, rgb(115, 34, 173),rgb(84, 162, 225), rgb(186, 221, 62));
+    animation: gradient 7s ease-in-out infinite;
 }
 
 h1{
